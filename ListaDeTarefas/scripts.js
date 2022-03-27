@@ -7,12 +7,12 @@ let arrayAddTask = []
 
 function viewTask() {
   let newLi = ''
-  arrayAddTask.forEach((addTask) => {
+  arrayAddTask.forEach((addTask, index) => {
 
     newLi = newLi + `<li class="item-tarefa">
     <button class="botao-arrow"><i class="fa-solid fa-circle-arrow-right"></i></button>
     <p class="nome-tarefa" id="nome-tarefa-id">${addTask}</p>
-    <button class="botao-delete"><i class="fa-solid fa-trash"></i></button>
+    <button class="botao-delete" onclick="delTask(${index})"><i class="fa-solid fa-trash"></i></button>
     </li>`
   })
 
@@ -20,10 +20,13 @@ function viewTask() {
 
 }
 
+function delTask(index) {
+  arrayAddTask.splice(index, 1)
+  viewTask()
+}
 
 function addTask() {
   arrayAddTask.push(input.value)
-
   viewTask()
 }
 
