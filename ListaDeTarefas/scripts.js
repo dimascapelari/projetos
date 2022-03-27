@@ -30,6 +30,5 @@ function addTask() {
   viewTask()
 }
 
-
 button.addEventListener('click', addTask)
 
