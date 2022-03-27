@@ -35,7 +35,7 @@ body {
 .container {
   background: #FFFFFF;
   width: 541px;
-  height: 498px;
+  height: auto;
   border-radius: 5px;
   margin: 100px auto 0;
   padding: 30px 20px;
@@ -110,4 +110,20 @@ body {
 
 .item-tarefa:hover .botao-arrow {
   opacity: 1;
+}
+
+.concluido {
+  background-color: greenyellow;
+  text-decoration: line-through;
+}
+
+@media screen and (max-width: 600px){
+  .container {
+    width: 450px;
+  }
+
+  #input-principal{
+    width: 300px;
+  }
+
 }
