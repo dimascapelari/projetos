@@ -328,4 +328,11 @@ td, th {
         padding-bottom: 30px;
     }
     
+    .input-padrao {
+       width: 90%;
+    }
+    .enviar {
+        width: 60%;
+    }
+
 }
