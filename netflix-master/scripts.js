@@ -1,4 +1,3 @@
-let abacate = document.getElementById('botao-pergunta')
+let botao = document.getElementById('botao-pergunta')
 
-addEventListener()
-console.log(abacate)
+botao.addEventListener('click',)
