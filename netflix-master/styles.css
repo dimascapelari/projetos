@@ -101,7 +101,8 @@ h2 {
 
 #imagem-pergunta {
     float: right;
-    margin-top: 8px
+    margin-top: 8px;
+    transform: rotate(45deg);
 }
 
 #pergunta {
@@ -111,6 +112,7 @@ h2 {
     margin-left: auto;
     margin-top: 3px;
     padding: 24px;
+    display: none;
 }
 
 .paragrafo-pergunta {
