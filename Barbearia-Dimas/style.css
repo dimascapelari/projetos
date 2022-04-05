@@ -113,8 +113,9 @@ footer {
     margin: 20px 0 0;
 }
 
+
 form {
-    margin: 60px;
+    margin: 100px;
 }
 
 form label, form legend {
@@ -177,6 +178,11 @@ thead {
 td, th {
     border: 1px solid #000000;
     padding: 8px 15px;
+    
+}
+
+.tabela-horario{
+    margin-left: 110px;
 }
 
 /* css da página inicial */
@@ -311,6 +317,13 @@ td, th {
         text-align: center;
     }
 
+    nav a {
+        font-size: 18px;
+    }
+    .tabela-horario{
+        margin-left: auto;
+        margin-right: auto;
+    }
     .lista-beneficios, .imagem-beneficios {
         width: 100%;
     }
@@ -331,8 +344,20 @@ td, th {
     .input-padrao {
        width: 90%;
     }
+
+    form {
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+                
+    }
+
     .enviar {
-        width: 60%;
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
