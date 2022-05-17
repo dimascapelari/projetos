@@ -1,0 +1,61 @@
+* {
+    box-shadow: border-box;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    width: 60%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(7, 105, 252);
+    color: aliceblue;
+    text-align: center;
+}
+
+header ul li {
+    list-style: none;
+}
+
+section form ul li {
+    list-style: none;
+}
+
+section form ul li label {
+    font-size: 22px;
+}
+
+section {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+}
+
+section button {
+    margin: 5px;
+    font-size: 20px;
+}
+
+button {
+    padding: 0px 5px 0px 5px;
+}
+
+table,
+th,
+td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-radius: 5px;
+    font-size: medium;
+    padding: 2px 8px 2px 8px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+}
