@@ -3,12 +3,20 @@
     <!-- v-if, v-else, v-show são diretivas dentre outras -->
     <p v-if="esta_trabalhando">Estou trabalhando no momento.</p>
     <p v-else>Estou em busca de novas oportunidades!</p>
-    <p>Utilizo as seguintes tecnologias:</p>
+    <p>Utilizo as seguintes tecnologias para Front-end:</p>
     <ul>
-      <li>Vue.JS</li>
-      <li>JavaScript</li>
-      <li>HTML</li>
-      <li>CSS</li>
+      <li
+        v-for="(technology, index) in frontend_technologies"
+        v-bind:key="index"
+      >
+        {{ technology }}
+      </li>
+    </ul>
+    <p>Utilizo as seguintes tecnologias para Back-end:</p>
+    <ul>
+      <li v-for="technology in backend_technologies" :key="technology.id">
+        {{ technology.language }}
+      </li>
     </ul>
     <div>
       <button @click="showEmail">{{ textoBotao }}</button>
@@ -36,6 +44,12 @@ export default {
       email: "dimas.capelari@gmail.com",
       meu_link: "https://www.google.com.br",
       textoBotao: "Mostrar e-mail",
+      frontend_technologies: ["Vue.JS", "JavaScript", "HTML", "CSS"],
+      backend_technologies: [
+        { id: 1, language: "PHP" },
+        { id: 1, language: "Java" },
+        { id: 1, language: "Python" },
+      ],
     };
   },
   methods: {
