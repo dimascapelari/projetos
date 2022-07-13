@@ -15,12 +15,21 @@ export default {
     setTimeout(() => {
       this.name = "Dimas";
     }, 1000);
+
+    this.lifeCycle();
   },
   // mounted() é uma HOOK que está acima da hierarquia do created()
   mounted() {
     setTimeout(() => {
       this.name = "Dimas Capelari";
     }, 2000);
+
+    this.lifeCycle();
+  },
+  methods: {
+    lifeCycle() {
+      console.log("Executou");
+    },
   },
 };
 </script>
