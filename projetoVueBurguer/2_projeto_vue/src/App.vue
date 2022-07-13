@@ -1,19 +1,22 @@
 <template>
   <div>
     <PrimeiroComponente />
-    <DimasComponent />
+    <p>O data de App é: {{ testando }}</p>
   </div>
 </template>
 
 <script>
 import PrimeiroComponente from "./components/PrimeiroComponente.vue";
-import DimasComponent from "./components/DimasComponent.vue";
 
 export default {
   name: "App",
   components: {
     PrimeiroComponente,
-    DimasComponent,
+  },
+  data() {
+    return {
+      testando: "Teste",
+    };
   },
 };
 </script>

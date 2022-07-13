@@ -1,10 +1,24 @@
 <template>
-  <h1>Olá Vue!</h1>
+  <div>
+    <h1>Olá Vue!</h1>
+    <p>
+      Meu nome é {{ nome }}, tenho {{ age }} anos e trabalho como
+      {{ profissao }}.
+    </p>
+  </div>
 </template>
 
 <script>
 export default {
   name: "PrimeiroComponente",
+  //data() são os dados que podem ser usados dentro deste componente e não fora dele
+  data() {
+    return {
+      nome: "Dimas",
+      age: 39,
+      profissao: "Programador",
+    };
+  },
 };
 </script>
 
