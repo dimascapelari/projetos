@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- <p>{{ compEmail }} - {{ email }}</p> -->
     <!-- v-if, v-else, v-show são diretivas dentre outras -->
     <p v-if="esta_trabalhando">Estou trabalhando no momento.</p>
     <p v-else>Estou em busca de novas oportunidades!</p>
@@ -37,11 +38,13 @@ import Picture from "./Picture.vue";
 export default {
   components: { Picture },
   name: "Info",
+  props: {
+    email: String,
+    esta_trabalhando: Boolean,
+  },
   data() {
     return {
-      esta_trabalhando: false,
       mostrar_email: false,
-      email: "dimas.capelari@gmail.com",
       meu_link: "https://www.google.com.br",
       textoBotao: "Mostrar e-mail",
       frontend_technologies: ["Vue.JS", "JavaScript", "HTML", "CSS"],
